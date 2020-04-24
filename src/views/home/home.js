@@ -3,7 +3,9 @@ export default {
     return {
       youTubeUrl: '',
       newUrl: '',
-      iframeUrl: ''
+      iframeUrl: '',
+      areOptionsVisible: false,
+      isTitleDragActive: false
     }
   },
   methods: {
@@ -22,6 +24,12 @@ export default {
       if (from !== 'splash') {
         this.$refs['input-form'].classList.toggle('d-none')
       }
+    },
+    showOptions() {
+      this.areOptionsVisible = true;
+    },
+    hideOptions() {
+      this.areOptionsVisible = false
     }
   }
 }

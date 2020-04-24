@@ -1,0 +1,53 @@
+.home-main {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    .new-url-button {
+      display: block;
+    }
+  }
+  input {
+   border-radius: 100px;
+    padding: 7px 15px;
+  }
+
+  .drag-div {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    .header {
+      height: 10vh;
+      max-height: 40px;
+      &.active {
+        background: #ffffffaa;
+      }
+    }
+  }
+  .splash {
+    height: 100%;
+    width: 100%;
+    background: url("../../assets/bg.png");
+    background-size: cover;
+  }
+
+  .new-url-button {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    display: none;
+  }
+  .new-url-form {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    background: rgba(44, 62, 80, 0.33);
+    button {
+      min-width: 130px;
+    }
+  }
+}
